@@ -1,68 +1,79 @@
-E-commerce SQL Analysis
-E-commerce Sales and Customer Analytics Project using SQL - Analyzing sales, customers, products, and payments.
+# E-commerce Sales and Customer Analytics using SQL
 
-
-This project focuses on performing **Sales and Customer Analytics** for a simulated E-commerce company using **SQL (MySQL)**.
+This project involves analyzing the sales, customer behavior, product performance, and payment trends of a simulated E-commerce company using **SQL (MySQL)**.
 
 ---
 
-## 📌 Project Overview:
+## 📌 Project Objective:
 
-The goal of this project is to analyze sales, customer behavior, product performance, and payment trends using SQL queries on an e-commerce dataset.
-
----
-
-## 📂 Project Structure:
-
-- **Ecommerce_SQL_Project_LargeDataset.sql** → Contains the database schema and sample data (customers, orders, products, order_items, payments) and it Contains SQL queries for analysis and reporting
-- **README.md** → Project description and details
+To extract actionable business insights from an e-commerce sales database by performing various SQL-based analysis on customer data, orders, products, and payments.
 
 ---
 
-## ✅ Key SQL Topics Covered:
+## 🗃️ Dataset Description:
 
-- Joins
+The dataset contains 5 main tables:
+
+| Table Name | Description |
+|------------|-------------|
+| **customers** | Customer information like name, city, country, signup date |
+| **products** | Product details like name, category, and price |
+| **orders** | Order information such as order date, customer id, and order value |
+| **order_items** | Detailed order breakdown showing products per order |
+| **payments** | Payment method, status, and date for each order |
+
+---
+
+## ✅ SQL Skills Applied:
+
+- Joins (INNER JOIN, LEFT JOIN)
 - Aggregations (SUM, COUNT, AVG)
-- GROUP BY and HAVING
+- GROUP BY and HAVING clauses
 - Subqueries
-- CTEs (Common Table Expressions)
-- Window Functions (RANK, LAG)
-- Date Functions
+- Common Table Expressions (CTEs)
+- Window Functions (RANK, LAG, LEAD)
+- Date Functions (MONTH, YEAR)
 
 ---
 
-## ✅ Types of Analysis Performed:
+## ✅ Analysis Performed:
 
-- Total Revenue and Monthly Trends
-- Top Customers by Spending
-- Product Category Performance
-- Payment Success Rates
-- Customer Segmentation (New vs Returning)
-- Churn Analysis (Inactive Customers)
+- Total and Monthly Revenue Trends
+- Top Customers by Revenue
+- New vs Returning Customers
+- Top Selling Products and Categories
+- Customer Churn Analysis (Inactive Users)
+- Payment Success and Failure Rates
+- Ranking Customers by Total Spend
+- Month-over-Month Revenue Growth
+
+---
+
+## 📂 Project Files:
+
+- **Ecommerce_SQL_Project_LargeDataset.sql** → Database schema and sample data ,All analysis queries written and executed on the dataset
+- **README.md** → Project documentation (this file)
+
+---
+
+## ✅ How to Run This Project:
+
+1. Open MySQL Workbench or your preferred SQL client.
+2. Create a new database (Example: `ecommerce_project`).
+3. Import and run the script:  
+   `Ecommerce-sql-analysis.sql`
+4. Once data is loaded, execute queries from:  
+   `ecommerce_analysis_queries.sql`
 
 ---
 
 ## ✅ Tools Used:
 
 - MySQL
-- MySQL Workbench (You can use any SQL client)
+- MySQL Workbench
 
 ---
 
-## ✅ How to Run This Project:
 
-1. Create a new database in your SQL environment.
-2. Run the `Ecommerce_SQL_Project_LargeDataset.sql` script to create tables and insert sample data and after that it has to analysis queries and generate insights .
 
----
 
-## ✅ Author:
-
-Sakshi Ahlawat 😊
-
----
-
-## ✅ Future Improvements (Optional):
-
-- Create Power BI / Tableau dashboards on this data.
-- Integrate Python for automated SQL reporting.
